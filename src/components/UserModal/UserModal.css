@@ -11,10 +11,10 @@
   }
   
   #modal {
-    position: relative;
+    position: absolute;
     top: 20px;
-    right: 350px;
-    background: #fff;
+    right: 330px;
+    background-color: aliceblue;
     border-radius: 8px;
     width: 400px;
     text-align: center;
