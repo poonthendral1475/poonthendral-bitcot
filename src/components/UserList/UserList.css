@@ -32,7 +32,7 @@ ul {
     gap: 20px;
     position: relative;
     right: 100px;
-    width: 40%;
+    width: 50%;
   }
 #name_num{
   padding: 0;
@@ -45,6 +45,7 @@ ul {
     margin-top: 0px;
     position:relative;
     top: 10px;
+    font-weight:bolder;
   }
   #mobile{
     padding: 0px;
