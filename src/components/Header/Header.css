@@ -1,0 +1,10 @@
+#heading {
+    display: flex;
+    color: aliceblue;
+    background-color: rgba(1, 192, 255, 0.779);
+    border-radius: 10px;
+    letter-spacing: 2px;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+  }

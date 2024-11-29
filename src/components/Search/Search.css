@@ -1,0 +1,18 @@
+#search_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #search {
+    background-color: aliceblue;
+    width: 30%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    outline: 0;
+  }
+  #search input{
+    outline: 0;
+    background-color: aliceblue;
+  }

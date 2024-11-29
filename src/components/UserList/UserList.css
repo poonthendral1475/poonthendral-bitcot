@@ -1,0 +1,59 @@
+ul {
+    margin-top: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  li {
+    border-radius: 15px;
+    padding: 5px 20px;
+    background-color: azure;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  #profile {}
+  
+  #id_data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 60%;
+  }
+  
+  #user_data {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    right: 100px;
+    width: 40%;
+  }
+#name_num{
+  padding: 0;
+  margin: 0;
+
+}  
+  #name {
+    font-size: larger;
+    padding: 0px;
+    margin-top: 0px;
+    position:relative;
+    top: 10px;
+  }
+  #mobile{
+    padding: 0px;
+    position: relative;
+    bottom: 5px;
+  }
+  
+  #actions {
+    display: flex;
+    gap: 10px;
+  }
+  
