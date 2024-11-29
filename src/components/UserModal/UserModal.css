@@ -46,6 +46,9 @@
     color: white;
     border-radius: 5px;
   }
+  #modal_button:hover{
+    cursor: pointer;
+  }
   
   .modal_button_reset {
     margin-left: 10px;
@@ -53,6 +56,10 @@
     color: #fff;
     border-radius: 5px;
     padding: 5px;
+  }
+  .modal_button_reset:hover{
+cursor: pointer;
+
   }
   .add_user{
     padding-bottom: 10px;

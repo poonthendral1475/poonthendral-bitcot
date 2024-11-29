@@ -21,9 +21,9 @@ const UserList = ({ users, onEditClick, onDeleteClick, onViewClick }) => (
           </div>
         </div>
         <div id="actions">
-          <VisibilityRoundedIcon onClick={() => onViewClick(user)} />
-          <DeleteRoundedIcon onClick={() => onDeleteClick(user.id)} />
-          <ModeEditRoundedIcon onClick={() => onEditClick(user)} />
+          <VisibilityRoundedIcon className='pointer' onClick={() => onViewClick(user)} />
+          <DeleteRoundedIcon className='pointer' onClick={() => onDeleteClick(user.id)} />
+          <ModeEditRoundedIcon className='pointer' onClick={() => onEditClick(user)} />
         </div>
       </li>
     ))}

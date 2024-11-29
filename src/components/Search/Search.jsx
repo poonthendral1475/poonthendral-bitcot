@@ -1,13 +1,13 @@
 import React from 'react';
 import './Search.css'
-const Search = ({ searchTerm, setSearchTerm }) => (
+const Search = ({ searchUser, setSearchUser }) => (
   <div id="search_container">
     <div id="search">
       <input
         type="text"
         placeholder="Search"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
+        value={searchUser}
+        onChange={(e) => setSearchUser(e.target.value)}
       />
     </div>
   </div>

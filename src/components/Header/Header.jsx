@@ -4,7 +4,7 @@ import './Header.css'
 const Header = ({ onAddClick }) => (
   <div id="heading">
     <h2>All Contact</h2>
-    <AddCircleOutlineIcon fontSize='large' onClick={onAddClick} />
+    <AddCircleOutlineIcon className='pointer' fontSize='large' onClick={onAddClick} />
   </div>
 );
 

@@ -57,4 +57,7 @@ ul {
     display: flex;
     gap: 10px;
   }
-  
+  .pointer:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+  }

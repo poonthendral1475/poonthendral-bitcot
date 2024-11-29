@@ -10,17 +10,17 @@ const App = () => {
   const [modalData, setModalData] = useState(null);
   const [isEditMode, setIsEditMode] = useState(false);
   const [isAddMode, setIsAddMode] = useState(false);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchUser, setSearchUser] = useState('');
 
   useEffect(() => {
     fetch('https://raw.githubusercontent.com/BitcotDev/fresher-machin-test/main/json/sample.json')
       .then(response => response.json())
       .then(data => {
-        const usersWithIds = data.map((user, index) => ({
+        const userData = data.map((user, index) => ({
           ...user,
           id: user.id || index + 1
         }));
-        setUsers(usersWithIds);
+        setUsers(userData);
       })
       .catch(error => console.error('Error fetching user data:', error));
   }, []);
@@ -60,15 +60,15 @@ const App = () => {
   };
 
   const filteredUsers = users.filter((user) => 
-    user.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    user.mobile.includes(searchTerm) ||
-    user.id.toString().includes(searchTerm)
+    user.name.toLowerCase().includes(searchUser.toLowerCase()) ||
+    user.mobile.includes(searchUser) ||
+    user.id.toString().includes(searchUser)
   );
 
   return (
     <div id="container">
       <Header onAddClick={() => openModal(null, false, true)} />
-      <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <Search searchUser={searchUser} setSearchUser={setSearchUser} />
       <UserList 
         users={filteredUsers} 
         onEditClick={(user) => openModal(user, true)} 
